@@ -13,19 +13,19 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div id={show ? "open" : "close"} className="leftSide">
-        <img src={Logo} />
+        <img src={Logo} alt="navbar" />
         <div className="hiddenLinks">
-          <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/pizzeria/">Home</Link>
+          <Link to="/pizzeria/menu">Menu</Link>
+          <Link to="/pizzeria/about">About</Link>
+          <Link to="/pizzeria/contact">Contact</Link>
         </div>
       </div>
       <div className="rightSide">
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/pizzeria/">Home</Link>
+        <Link to="/pizzeria/menu">Menu</Link>
+        <Link to="/pizzeria/about">About</Link>
+        <Link to="/pizzeria/contact">Contact</Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>
